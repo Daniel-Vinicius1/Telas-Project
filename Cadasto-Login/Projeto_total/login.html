@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro/Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <style>
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="login" class="page active">
+        
+        <div class="corpo-login">
+            <form class="form-login">
+                <ul class="menu-login">
+                    <li class="item-login active"><a href="#" onclick="togglePage(event, 'login')">Login</a></li>
+                    <li class="item-login"><a href="#" onclick="togglePage(event, 'cadastro')">Cadastro</a></li>
+                </ul>
+                <label for="email-login" class="label-login">Email</label>
+                <input type="email" id="email-login" class="input-login" required>
+                <label for="password-login" class="label-login">Senha</label>
+                <div class="input-password-wrapper">
+                    <input type="password" id="password-login" class="input-login" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password-login')"></i>
+                </div>
+                <div id="login-error" class="error-message"></div>
+                <button type="submit" class="botao-login">Entrar</button>
+                <a href="#" class="link-esqueceu-senha" onclick="togglePage(event, 'recuperar-senha')">Esqueceu sua senha?</a>
+            </form>
+        </div>
+    </div>
+    
+    <div id="cadastro" class="page">
+        
+        <div class="corpo-cadastro">
+            <form class="form-cadastro">
+                <ul class="menu-cadastro">
+                    <li class="item-cadastro"><a href="#" onclick="togglePage(event, 'login')">Login</a></li>
+                    <li class="item-cadastro active"><a href="#" onclick="togglePage(event, 'cadastro')">Cadastro</a></li>
+                </ul>
+                <label for="username" class="label-cadastro">Usuário</label>
+                <input type="text" id="username" class="input-cadastro" required>
+                <label for="email-cadastro" class="label-cadastro">Email</label>
+                <input type="email" id="email-cadastro" class="input-cadastro" required>
+                <label for="password" class="label-cadastro">Senha</label>
+                <div class="input-password-wrapper">
+                    <input type="password" id="password" class="input-cadastro" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+                </div>
+                <label for="confirm-password" class="label-cadastro" id="confirm">Confirmar Senha</label>
+                <div class="input-password-wrapper">
+                    <input type="password" id="confirm-password" class="input-cadastro" required>
+                    <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('confirm-password')"></i>
+                </div>
+                <div id="confirm-password-error" class="error-message"></div>
+                <button type="submit" class="botao-cadastro">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="recuperar-senha" class="page">
+        
+        <div class="corpo-recuperar-senha">
+            <form class="form-recuperar-senha">
+                <ul class="menu-recuperar-senha">
+                    <li class="item-recuperar-senha active"><a href="#" onclick="togglePage(event, 'recuperar-senha')">Recuperar Senha</a></li>
+                </ul>
+                <label for="email-recuperar" class="label-recuperar-senha">Email</label>
+                <input type="email" id="email-recuperar" class="input-recuperar-senha" required>
+                <button type="submit" class="botao-recuperar-senha"> Link de Redefinição</button>
+                <button type="button" class="botao-voltar-login" onclick="togglePage(event, 'login')">
+                    <i class="fas fa-arrow-left"></i> Voltar
+                </button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

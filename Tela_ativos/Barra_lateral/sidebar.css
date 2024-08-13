@@ -1,0 +1,55 @@
+
+.abaLateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 90.8vh;
+    background: black; 
+    transition: left 0.5s ease;
+    border-radius: 0 6px 6px 0; 
+    z-index: 1; 
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.5); 
+
+}
+
+.titulo-lateral {
+    text-align: center;
+    margin-bottom: 1.5rem; 
+    margin-top: 1.5rem; 
+    color: #55ff00;
+
+    text-shadow: 0 0 1.2px rgb(135, 0, 0);
+ 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 20px; 
+   
+}
+
+
+
+.opcao {
+    margin: 1px;
+    padding: 1.9rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffffffdb; 
+    transition: background-color 0.3s ease;
+    border-left: 2px solid rgb(222, 6, 6);
+   
+}
+
+.opcao:hover {
+    background-color: rgba(102, 97, 97, 0.755); 
+    border-radius: 3px; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+    font-size: 1.2rem;
+    text-shadow: #FC0 1px 0 10px;
+    color: #ffffff;
+    
+}
+
+.opcao:hover > * {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+}

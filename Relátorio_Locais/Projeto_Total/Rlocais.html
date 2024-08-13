@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="Rlocais.css">
+    <script src="ativos.js"></script>
+</head>
+<body>
+
+<div class="baseDoLogin">
+    <div class="abaLateral">
+        <h2 class="titulo-lateral">Cadastrar</h2>
+        <div class="opcao" id="ativoOpcao">Ativos</div>
+        <div class="opcao" id="departamentoOpcao">Departamentos</div>
+        <div class="opcao" id="localizacaoOpcao">Localização</div>
+        <div class="opcao" id="tecnicoOpcao">Técnico</div>
+        <h2 class="titulo-lateral">Relatórios</h2>
+        <div class="opcao" id="relatorioGeralOpcao">Geral</div>
+        <div class="opcao" id="relatorioAtivosOpcao">Ativos</div>
+        <div class="opcao" id="relatorioDepartamentosOpcao">Departamentos</div>
+        <div class="opcao" id="relatorioLocaisOpcao">Locais</div>
+        <div class="opcao" id="relatorioTecnicosOpcao">Técnicos</div>
+    </div>
+    <form action="" class="estruturaLogin" id="formularioCadastrar">
+        <h3 class="titulo-login">Relatório dos Locais</h3> 
+        <label for="input-dispositivo" class="label-login label-dispositivo">Código do local</label>
+        <input id="input-dispositivo" class="input-login input-dispositivo" type="text" />
+        
+        <label for="input-modelo" class="label-login label-modelo">Nome do local(Prédio/Sala)</label>
+        <input id="input-modelo" class="input-login input-modelo" type="text" />
+        
+        <label for="input-serie" class="label-login label-serie">Endereço completo</label>
+        <input id="input-serie" class="input-login input-serie" type="text" />
+        
+        <label for="input-tombamento" class="label-login label-tombamento">Coordenadas geográficas </label>
+        <input id="input-tombamento" class="input-login input-tombamento" type="text" />
+        
+        <label for="input-local" class="label-login label-local">Quantidade de ativos no local</label>
+        <input id="input-local" class="input-login input-local" type="text" />
+        
+        <label for="input-data-instalacao" class="label-login label-data-instalacao">Lista de ativos por local</label>
+        <input id="input-data-instalacao" class="input-login input-data-instalacao" type="text" />
+        
+        
+        
+        <button class="botao-login">Cadastrar</button>
+    </form>
+    <div class="estruturaRelatorios" id="relatorioGeral">Relatório Geral</div>
+    <div class="estruturaRelatorios" id="relatorioAtivos">Relatório dos Ativos</div>
+    <div class="estruturaRelatorios" id="relatorioDepartamentos">Relatório dos Departamentos</div>
+    <div class="estruturaRelatorios" id="relatorioLocais">Relatório dos Locais</div>
+    <div class="estruturaRelatorios" id="relatorioTecnicos">Relatório dos Técnicos</div>
+</div>
+
+<script src="ativos.js">
+  
+</script>
+
+</body>
+</html>

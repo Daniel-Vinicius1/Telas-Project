@@ -1,0 +1,177 @@
+.corpo-recuperar-senha {
+    display: block;
+    position: relative;
+    z-index: 0;
+    margin: 4rem auto 0;
+    border-radius: 10px;
+    padding: 5rem 4rem 0 4rem;
+    width: 100%;
+    max-width: 525px;
+    min-height: 400px;
+    background: rgba(238, 235, 235, 0.844);
+    box-shadow: 0 50px 70px -20px rgba(121, 121, 113, 0.85);
+}
+
+.form-recuperar-senha {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 4.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    
+}
+
+.menu-recuperar-senha {
+    position: relative;
+    padding: 0;
+    margin: 0 0 6em 1rem;
+}
+
+.item-recuperar-senha {
+    list-style: none;
+    display: inline-block;
+}
+
+.item-recuperar-senha + .item-recuperar-senha {
+    margin-left: 2.25rem;
+}
+
+.item-recuperar-senha a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px #807d7d;
+    margin-left: 70px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+    transition: .20s all ease;
+}
+
+.item-recuperar-senha.active a,
+.item-recuperar-senha a:hover {
+    color: #000000;
+    transition: .15s all ease;
+}
+
+.label-recuperar-senha {
+    display: block;
+    padding-left: 1rem;
+    color: rgba(0, 0, 0, 0.986);
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-bottom: 1rem;
+}
+
+.input-recuperar-senha {
+    color: rgb(0, 0, 0);
+    font-size: 1.15rem;
+    width: 100%;
+    padding: .4rem 1rem;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 1.5rem;
+    background-color: rgba(50, 49, 49, 0.25);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.input-recuperar-senha:hover,
+.input-recuperar-senha:focus {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+.botao-recuperar-senha {
+    color: #000000c4;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    margin-top: 100px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0.1rem;
+}
+
+.botao-recuperar-senha::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #0d0c0c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-recuperar-senha:hover::before {
+    transform: scaleX(1);
+}
+
+.botao-recuperar-senha:hover {
+    border-bottom: 0.5px solid rgb(173, 177, 177);
+    color: #000000;
+}
+
+.botao-voltar-login {
+    color: #000000;
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left:-400px;
+    padding: .45rem;
+    background-color: transparent;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 325px;
+}
+
+.botao-voltar-login:hover {
+    font-size: 0.85rem;
+    text-shadow: 2px 2px 4px #767474;
+}
+
+
+
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 11px;
+    display: none;
+    margin-top: 0.5rem;
+    margin-left: 220px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.input-password-wrapper {
+    position: relative;
+}
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: rgb(231, 226, 226);
+}
+
+#confirm-password {
+    color: white;
+    
+}
+#confirm.error {
+    color: red;
+}
+#confirm{
+    margin-top: 10px;
+}

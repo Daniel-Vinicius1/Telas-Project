@@ -1,0 +1,111 @@
+.botao-login {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+    
+}
+
+.botao-login::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-login:hover::before {
+    transform: scaleX(1);
+}
+
+.botao-login:hover {
+    border: 2px solid rgb(17, 237, 142);
+    color: rgb(17, 237, 142);
+}
+
+.link-esqueceu-senha {
+    display: block;
+    margin-top: 3rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: .75rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.link-esqueceu-senha:hover {
+    color: rgb(2, 255, 74);
+}
+
+/* Estilos existentes... */
+
+.link-esqueceu-senha {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: .75rem;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.link-esqueceu-senha:hover {
+    color: rgb(17, 97, 237);
+}
+
+
+.botao-cadastro {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+}
+
+.botao-cadastro::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-cadastro:hover::before {
+    transform: scaleX(1);
+}
+
+.botao-cadastro:hover {
+    border: 2px solid rgb(17, 237, 142);
+    color: rgb(17, 237, 142);
+}

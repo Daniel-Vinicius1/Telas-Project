@@ -1,0 +1,206 @@
+
+@media (min-width: 300px) and (max-width: 364px) {
+    .corpo-login {
+        margin: 4rem auto 0;
+        padding: 5rem 4rem 0 4rem;
+        width: 94%;
+        max-width: 625px;
+        min-height: 530px;
+        background-size: cover;
+        box-shadow: 0 50px 70px -20px rgba(39, 39, 38, 0.85);
+    }
+
+    .item-login{
+        margin-left: -100px;
+        
+        
+    }
+    
+    .item-login a {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        
+        font-size: 0.9rem;
+        padding-bottom: .5rem;
+        transition: .20s all ease;
+    }
+    .corpo-recuperar-senha {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin: 7rem auto 0;
+        border-radius: 10px;
+        padding: 5rem 4rem 0 4rem;
+        width: 98%;
+        max-width: 525px;
+        min-height: 400px;
+        background: rgba(238, 235, 235, 0.844);
+        box-shadow: 0 50px 70px -20px rgba(121, 121, 113, 0.85);
+    }
+    .item-recuperar-senha a {
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 1.0rem;
+        
+    }
+    .botao-voltar-login {
+        margin-left:-220px;
+        
+    }
+    .botao-recuperar-senha {
+        font-size: 0.8rem;
+        
+    }
+
+}
+
+
+@media (min-width: 365px) and (max-width: 480px) {
+    .corpo-login {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin: 4rem auto 0;
+        padding: 5rem 4rem 0 4rem;
+        width: 100%;
+        max-width: 625px;
+        min-height: 530px;
+        background-size: cover;
+        box-shadow: 0 50px 70px -20px rgba(39, 39, 38, 0.85);
+    }
+    
+    .item-login a {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+       margin-left: 20px;
+        font-size: 0.8rem;
+        padding-bottom: .5rem;
+        transition: .20s all ease;
+        
+    }
+    .item-recuperar-senha a {
+        margin-left: 30px;
+        font-weight: 500;
+        font-size: 1.0rem;
+        
+    }
+   
+    .botao-recuperar-senha {
+
+        font-size: 0.8rem;
+        
+    }
+
+    .botao-voltar-login {
+    
+        margin-left:-240px;
+        
+    }
+
+
+}
+@media (min-width: 330px) and (max-width: 364px) {
+    .corpo-cadastro {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin: 1rem auto 0;
+        padding: 5rem 4rem 0 4rem;
+        width: 95%;
+        max-width: 525px;
+        min-height: 460px;
+        background-image:url(/Tela_ativos/Projeto_Total/logo-ifro-hotsitiii.png);
+        background-size: cover;
+        box-shadow: 0 50px 70px -20px rgba(39, 39, 38, 0.85);
+    }
+
+    
+    
+
+    .item-cadastro a {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.9rem;
+        padding-bottom: .5rem;
+        transition: .20s all ease;
+    }
+    .error-message {
+        color: red;
+        font-size: 10px;
+        display: none;
+        margin-top: 0.5rem;
+        margin-left: 30px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+}
+
+
+
+@media (min-width: 365px) and (max-width: 480px) {
+
+    .corpo-cadastro {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin: 0.6rem auto 0;
+        padding: 5rem 4rem 0 4rem;
+        width: 100%;
+        max-width: 525px;
+        min-height: 260px;
+        background-image:url(/Tela_ativos/Projeto_Total/logo-ifro-hotsitiii.png);
+        background-size: cover;
+        box-shadow: 0 50px 70px -20px rgba(39, 39, 38, 0.85);
+    }
+
+
+    .item-cadastro a {
+        position: relative;
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 0.8rem;
+        padding-bottom: .5rem;
+        transition: .20s all ease;
+    }
+
+    .botao-cadastro {
+        color: #ffffff;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 4rem;
+        margin-bottom: -3px;
+        padding: .75rem;
+        border: none;
+        background-color: transparent;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: absolute;
+        bottom: 1.50rem; 
+    }
+
+    .error-message {
+        color: rgb(255, 0, 0);
+        font-size: 9px;
+        display: none;
+        margin-top: 0.5rem;
+        margin-left: 130px;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+
+}
+

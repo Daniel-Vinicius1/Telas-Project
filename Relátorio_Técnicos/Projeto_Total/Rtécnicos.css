@@ -1,0 +1,622 @@
+
+body {
+    background-color:#d3d3d3; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    line-height: 0.2rem;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+}
+* {
+    box-sizing: border-box;
+    transition: .25s all ease;
+}
+
+.baseDoLogin {
+    display: block;
+    position: relative;
+    z-index: 0;
+    margin: 0.9rem auto 0;
+    margin-left: 600px;
+    padding: 0 3rem; 
+    width:35%;
+    max-width: 550px; 
+    min-height: 640px; 
+    background-image: url(logo-ifro-hotsitiii.png);
+   
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+}
+
+
+
+.baseDoLogin:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .2);
+    color: #e2dfdf;
+    border-radius: 10px;
+    background-image: radial-gradient(at left bottom, rgb(0 0 0) 0%, rgb(6 5 5 / 90%) 59%,rgb(0 0 0 / 90%) 100%) ; 
+    box-shadow: rgb(10 11 10 / 77%) 0px -20px 150px -20px;
+}
+
+
+
+.abaLateral {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 90.4vh;
+    background: black; 
+    transition: left 0.5s ease;
+    border-radius: 0 6px 6px 0; 
+    z-index: 1; 
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.5); 
+
+}
+
+.titulo-lateral {
+    text-align: center;
+    margin-bottom: 1.5rem; 
+    margin-top: 1.5rem; 
+    color: #55ff00;
+
+    text-shadow: 0 0 1.2px rgb(135, 0, 0);
+ 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 20px; 
+   
+}
+
+
+
+.opcao {
+    margin: 1px;
+    padding: 1.9rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #ffffffdb; 
+    transition: background-color 0.3s ease;
+    border-left: 2px solid rgb(222, 6, 6);
+   
+}
+
+.opcao:hover {
+    background-color: rgba(102, 97, 97, 0.755); 
+    border-radius: 3px; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+    font-size: 1.2rem;
+    text-shadow: #FC0 1px 0 10px;
+    color: #ffffff;
+    
+}
+
+.opcao:hover > * {
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); 
+}
+
+
+.estruturaRelatorios {
+    display: none; 
+}
+
+.mostrar {
+    display: block !important;
+}
+
+.estruturaLogin {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    padding-bottom: 4rem; 
+}
+
+.titulo-login {
+    text-align: center; 
+    margin-bottom: 0.5rem; 
+    margin-top: 0.1rem; 
+    margin-bottom: 43px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.label-login {
+    display: block;
+    padding-left: 1rem;
+    color: rgba(205, 183, 183, 0.896);
+    text-transform: uppercase;
+    font-size: .65rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; 
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.input-login {
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 40px; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    margin-top: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.input-login:focus {
+    
+    outline: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.input-login:focus + .floating-label,
+.input-login:not(:placeholder-shown) + .floating-label {
+    top: 5px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.4;
+}
+
+
+.botao-login {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+    
+}
+
+.botao-login::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-login:hover::before {
+    transform: scaleX(1);
+}
+
+.botao-login:hover {
+    border: 2px solid rgb(17, 237, 142);
+    color: rgb(17, 237, 142);
+}
+
+
+@media (min-width: 320px) and (max-width: 377px) {
+    
+    .abaLateral {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100px;
+        height: 484px;
+        background: black; 
+        transition: left 0.5s ease;
+        border-radius: 0 6px 6px 0; 
+        z-index: 1; 
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.5); 
+    }
+    
+    
+    .titulo-lateral {
+        font-size: 0.78rem;
+    }
+
+    .opcao {
+        padding: 1.2rem;
+        font-size: 0.6rem;
+        
+    }
+
+    .opcao:hover {
+        background-color: rgba(102, 97, 97, 0.755); 
+        border-radius: 3px; 
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); 
+        font-size: 0.64rem;
+        text-shadow: #FC0 1px 0 10px;
+        color: #ffffff;
+        
+    }
+    
+
+    .baseDoLogin {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin-top: 70px;
+        margin-left: 110px;
+        padding: 0 15px; 
+        width: 240px;
+        max-width: 500px; 
+        min-height: 400px; 
+        background-image: url(images.jpeg);        
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+    }
+    
+    .label-login {
+        display: block;
+        padding-left: 0.2rem;
+        color: rgba(205, 183, 183, 0.896);
+        text-transform: uppercase;
+        font-size: .49rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; 
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+    .input-login {
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px 20px;
+        display: block;
+        height: 5px; 
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0);
+        overflow: hidden;
+        margin-top: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+    .titulo-login {
+        text-align: center; 
+        margin-bottom: 0.5rem; 
+        margin-top: 0.1rem; 
+        margin-bottom: 43px;
+        color: white; text-shadow: black 0.1em 0.1em 0.2em;
+        font-size: 11px;
+        padding-top: 30px;
+    }
+    
+.botao-login {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem; 
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+    
+}
+}
+
+@media (min-width: 381px) and (max-width: 480px) {
+    
+    .abaLateral {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100px;
+        height: 600px;
+        background: black; 
+        transition: left 0.5s ease;
+        border-radius: 0 6px 6px 0; 
+        z-index: 1; 
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.5); 
+    }
+    
+    
+    .titulo-lateral {
+        font-size: 0.86rem;
+    }
+
+    .opcao {
+        padding: 1.6rem;
+        font-size: 0.6rem;
+        margin-left: -1.9px;
+        border-left: 2.3px solid rgb(222, 6, 6);
+    }
+    .opcao:hover {
+        background-color: rgba(102, 97, 97, 0.755); 
+        border-radius: 3px;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3); 
+        font-size: 12px;
+        margin-left: -14px;
+        text-shadow: #FC0 1px 0 10px;
+        color: #ffffff;
+        
+    }
+
+    .baseDoLogin {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin-top: 105px;
+        margin-left: 120px;
+        padding: 0 15px; 
+        width: 256px;
+        max-width: 500px; 
+        min-height: 300px; 
+        background-image: url(images.jpeg);        
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+    }
+    
+    .label-login {
+        display: block;
+        padding-left: 0.2rem;
+        color: rgba(205, 183, 183, 0.896);
+        text-transform: uppercase;
+        font-size: .49rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; 
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+    .input-login {
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 10px 20px;
+        display: block;
+        height: 5px; 
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0);
+        overflow: hidden;
+        margin-top: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+    .titulo-login {
+        text-align: center; 
+        margin-bottom: 0.5rem; 
+        margin-top: 0.1rem;
+        margin-bottom: 43px;
+        color: white; text-shadow: black 0.1em 0.1em 0.2em;
+        font-size: 11px;
+        padding-top: 30px;
+    }
+    
+.botao-login {
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem; 
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+
+}
+
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .abaLateral {
+        position: fixed;
+        left: 0;
+        top: 125px;
+        width: 170px;
+        height: 672px;
+        background: black; 
+        transition: left 0.5s ease;
+        border-radius: 0 6px 6px 0; 
+        z-index: 1; 
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-lateral {
+        font-size: 1.4rem;
+    }
+
+    .opcao {
+        padding: 1.8rem;
+        font-size: 1.1rem;
+    }
+
+    .baseDoLogin {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin-top: 150px;
+        margin-left: 230px;
+        padding: 0 15px; 
+        width: 430px;
+        max-width: 730px; 
+        min-height: 440px; 
+        background-image: url(images.jpeg);        
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+    }
+    
+    .label-login {
+        display: block;
+        padding-left: 0.8rem;
+        color: rgba(205, 183, 183, 0.896);
+        text-transform: uppercase;
+        font-size: .76rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; 
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .abaLateral {
+        position: fixed;
+        left: 0;
+        top: 145px;
+        width: 190px;
+        height: 798px;
+        background: black; 
+        transition: left 0.5s ease;
+        border-radius: 0 6px 6px 0; 
+        z-index: 1; 
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-lateral {
+        font-size: 1.2rem;
+    }
+
+    .opcao {
+        padding: 2.29rem;
+        font-size: 1.1rem;
+    }
+
+    .baseDoLogin {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin-top: 200px;
+        margin-left: 260px;
+        padding: 0 15px; 
+        width: 500px;
+        max-width: 610px; 
+        min-height: 660px; 
+        background-image: url(images.jpeg);        
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+    }
+    .label-login {
+        display: block;
+        padding-left: 0.8rem;
+        color: rgba(205, 183, 183, 0.896);
+        text-transform: uppercase;
+        font-size: .89rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; 
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .abaLateral {
+        position: fixed;
+        left: 0;
+        top: 45px;
+        width: 190px;
+        height: 555px;
+        margin-top: 150px;
+        background: black; 
+        transition: left 0.5s ease;
+        border-radius: 0 6px 6px 0; 
+        z-index: 1; 
+        box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo-lateral {
+        font-size: 1.1rem;
+    }
+
+    .opcao {
+        padding: 1.45rem;
+        font-size: 1.1rem;
+    }
+
+    .baseDoLogin {
+        display: block;
+        position: relative;
+        z-index: 0;
+        margin-top: 0px;
+        margin-left: 310px;
+        padding: 0 15px; 
+        width: 400px;
+        max-width: 610px; 
+        min-height: 260px; 
+        background-image: url(images.jpeg);        
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 30px 50px -10px rgba(39, 39, 38, 0.85);
+    }
+    .label-login {
+        display: block;
+        padding-left: 0.8rem;
+        color: rgba(205, 183, 183, 0.896);
+        text-transform: uppercase;
+        font-size: .69rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; 
+        text-shadow: 0.1em 0.1em 0.2em black;
+    }
+    .input-login {
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 11px 20px;
+        display: block;
+        height: 15px; 
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0);
+        overflow: hidden;
+        margin-top: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+    .titulo-login {
+        text-align: center; 
+        margin-bottom: 0.5rem; 
+        margin-top: 0.1rem;  
+        margin-bottom: 43px;
+        color: white; text-shadow: black 0.1em 0.1em 0.2em;
+        font-size: 11px;
+        padding-top: 30px;
+    }
+
+}
+
+
+

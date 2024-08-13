@@ -1,0 +1,118 @@
+
+.estruturaRelatorios {
+    display: none; 
+}
+
+.mostrar {
+    display: block !important;
+}
+
+.estruturaLogin {
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    padding-bottom: 4rem; 
+}
+
+.titulo-login {
+    text-align: center; 
+    margin-bottom: 0.5rem; 
+    margin-top: 0.1rem; 
+    margin-bottom: 43px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 16px;
+    padding-top: 30px;
+}
+
+.label-login {
+    display: block;
+    padding-left: 1rem;
+    color: rgba(205, 183, 183, 0.896);
+    text-transform: uppercase;
+    font-size: .65rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; 
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.input-login {
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 40px; 
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    margin-top: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.input-login:focus {
+    
+    outline: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.input-login:focus + .floating-label,
+.input-login:not(:placeholder-shown) + .floating-label {
+    top: 5px;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.4;
+}
+
+
+.botao-login {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4rem;
+    margin-bottom: -3px;
+    padding: .75rem;
+    border: none;
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 1rem; 
+    
+}
+
+.botao-login::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao-login:hover::before {
+    transform: scaleX(1);
+}
+
+.botao-login:hover {
+    border: 2px solid rgb(17, 237, 142);
+    color: rgb(17, 237, 142);
+}

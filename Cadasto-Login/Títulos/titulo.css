@@ -1,0 +1,101 @@
+.item-login {
+    list-style: none;
+    display: inline-block;
+}
+
+.item-login + .item-login {
+    margin-left: 2.25rem;
+}
+
+.item-login a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-left: 40px;
+    padding-bottom: .5rem;
+    transition: .20s all ease;
+}
+
+.item-login.active a,
+.item-login a:hover{
+    color: #ffffff;
+    transition: .15s all ease;
+}
+
+.item-login a:after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 100%;
+    bottom: -1px;
+    left: 0;
+    border-radius: 50%;
+    transition: .15s all ease;
+}
+
+.item-login a:hover:after,
+.item-login.active a:after{
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    right: 0;
+    bottom: 2px;
+    border-radius: 0;
+    transition: .20s all ease;
+}
+
+
+
+
+.item-cadastro {
+    list-style: none;
+    display: inline-block;
+}
+
+.item-cadastro + .item-cadastro {
+    margin-left: 5.25rem;
+}
+
+.item-cadastro a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-bottom: .5rem;
+    transition: .20s all ease;
+}
+
+.item-cadastro.active a,
+.item-cadastro a:hover{
+    color: #ffffff;
+    transition: .15s all ease;
+}
+
+.item-cadastro a:after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 100%;
+    bottom: -1px;
+    left: 0;
+    border-radius: 50%;
+    transition: .15s all ease;
+}
+
+.item-cadastro a:hover:after,
+.item-cadastro.active a:after{
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+    right: 0;
+    bottom: 2px;
+    border-radius: 0;
+    transition: .20s all ease;
+}
